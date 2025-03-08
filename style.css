@@ -1,0 +1,38 @@
+.nav-link-custom {
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    transition: transform 0.2s ease, color 0.3s ease;
+    position: relative;
+    display: inline-block;
+}
+
+.nav-link-custom:hover {
+    transform: scale(1.1);
+    color: #df5a22; 
+}
+
+.badge-notification {
+    position: absolute;
+    top: -10px;
+    right: -15px;
+    background: rgb(245, 29, 29);
+    color: white;
+    font-size: 12px;
+    padding: 4px 7px;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+.bx{
+    font-size: 30px;
+}
+
+#logo-icon{
+    font-size: 15px;
+}
+
+.container-fluid{
+    background-color: orange;
+    box-shadow: 10px 15px 15px rgba(0, 0, 0, 0.3);
+}
