@@ -102,14 +102,19 @@
                 }
 
                 localStorage.setItem("firstName", document.getElementById("firstName").value);
-                localStorage.setItem("email", document.getElementById("email").value);
-                localStorage.setItem("password", password.value); // Save password for login validation
+                localStorage.setItem("email", document.getElementById("email").value.trim());
+                // localStorage.setItem("password", password.value); 
+                localStorage.setItem("password", document.getElementById("password").value.trim());
+
+
+                console.log("Saved Email:", localStorage.getItem("email"));
+                console.log("Saved Password:", localStorage.getItem("password"));
 
                 alert("Signup successful! Redirecting to login page...");
 
                 setTimeout(() => {
                     window.location.href = "login.html";
-                }, 1000);
+                }, 5000);
 
             }, false);
         })();
